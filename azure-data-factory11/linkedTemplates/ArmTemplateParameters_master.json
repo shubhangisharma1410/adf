@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "azure-data-factory11"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://learningstorageacco.dfs.core.windows.net/"
+		},
 		"containerUri": {
 			"value": ""
 		},
