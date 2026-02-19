@@ -21,6 +21,10 @@
 				"name": "filetype",
 				"type": "varchar"
 			}
-		]
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ADLSDeleteFiles"
+		}
 	}
 }

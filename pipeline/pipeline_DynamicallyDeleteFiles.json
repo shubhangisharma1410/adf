@@ -64,7 +64,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"folderName": {
-											"value": "@item().folderName",
+											"value": "@item().foldername",
 											"type": "Expression"
 										}
 									}
@@ -81,7 +81,7 @@
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
 									"wildcardFileName": {
-										"value": "@item().fileType",
+										"value": "@item().filetype",
 										"type": "Expression"
 									},
 									"enablePartitionDiscovery": false
