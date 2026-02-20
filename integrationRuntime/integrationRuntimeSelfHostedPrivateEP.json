@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeSelfHostedPrivateEP",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
