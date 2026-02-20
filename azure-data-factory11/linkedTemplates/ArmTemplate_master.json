@@ -31,6 +31,14 @@
 			"type": "string",
 			"defaultValue": "rajatmaurya"
 		},
+		"AzureDataLakeStoragePrivateEndPoints_properties_privateLinkResourceId": {
+			"type": "string",
+			"defaultValue": "/subscriptions/8bae69d8-798b-48b3-8b21-97f5ff5d7d9e/resourceGroups/LearningResourceGroup/providers/Microsoft.Storage/storageAccounts/learningstorageacco"
+		},
+		"AzureDataLakeStoragePrivateEndPoints_properties_groupId": {
+			"type": "string",
+			"defaultValue": "dfs"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -75,6 +83,12 @@
 					},
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"AzureDataLakeStoragePrivateEndPoints_properties_privateLinkResourceId": {
+						"value": "[parameters('AzureDataLakeStoragePrivateEndPoints_properties_privateLinkResourceId')]"
+					},
+					"AzureDataLakeStoragePrivateEndPoints_properties_groupId": {
+						"value": "[parameters('AzureDataLakeStoragePrivateEndPoints_properties_groupId')]"
 					}
 				}
 			},
