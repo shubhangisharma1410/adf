@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeSHVirtualEP",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
