@@ -1,0 +1,9 @@
+{
+	"name": "azure-data-factory11",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "42c07928-1bcf-4f56-81f2-e699b96b2263",
+		"tenantId": "5984c746-a25f-4947-b1de-0abed27d3c79"
+	}
+}
