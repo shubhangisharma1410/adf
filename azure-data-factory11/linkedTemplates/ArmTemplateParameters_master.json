@@ -8,11 +8,50 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"AzureDataLakeStorageForMultipleCSV_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDB_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase_password": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"LS_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_Email_accountKey": {
+			"value": ""
+		},
+		"SqlServerOnPrem_password": {
 			"value": ""
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://learningstorageacco.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorageForMultipleCSV_properties_typeProperties_url": {
+			"value": "https://learningstorageacco.dfs.core.windows.net/"
+		},
+		"AzureSqlDB_properties_typeProperties_server": {
+			"value": "adfsqlserverind.database.windows.net"
+		},
+		"AzureSqlDB_properties_typeProperties_database": {
+			"value": "azureDB"
+		},
+		"AzureSqlDB_properties_typeProperties_userName": {
+			"value": "rajatmaurya"
+		},
+		"AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "adfsqlserverind.database.windows.net"
+		},
+		"AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "azureDB"
+		},
+		"AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "rajatmaurya"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "adfsqlserverind.database.windows.net"
@@ -23,11 +62,20 @@
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"value": "rajatmaurya"
 		},
-		"AzureDataLakeStoragePrivateEndPoints_properties_privateLinkResourceId": {
-			"value": "/subscriptions/8bae69d8-798b-48b3-8b21-97f5ff5d7d9e/resourceGroups/LearningResourceGroup/providers/Microsoft.Storage/storageAccounts/learningstorageacco"
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://learningstorageacco.dfs.core.windows.net/"
 		},
-		"AzureDataLakeStoragePrivateEndPoints_properties_groupId": {
-			"value": "dfs"
+		"LS_Email_properties_typeProperties_url": {
+			"value": "https://learningstorageacco.dfs.core.windows.net/"
+		},
+		"SqlServerOnPrem_properties_typeProperties_server": {
+			"value": "DESKTOP-ANBK365"
+		},
+		"SqlServerOnPrem_properties_typeProperties_database": {
+			"value": "TestDB"
+		},
+		"SqlServerOnPrem_properties_typeProperties_userName": {
+			"value": "sa"
 		},
 		"containerUri": {
 			"value": ""

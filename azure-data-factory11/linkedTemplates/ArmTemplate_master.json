@@ -11,13 +11,65 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"AzureDataLakeStorageForMultipleCSV_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorageForMultipleCSV'"
+		},
+		"AzureSqlDB_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDB'"
+		},
+		"AzureSqlDatabase_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase'"
+		},
 		"AzureSqlDatabase1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
 		},
+		"LS_ADLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS'"
+		},
+		"LS_Email_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_Email'"
+		},
+		"SqlServerOnPrem_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SqlServerOnPrem'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://learningstorageacco.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorageForMultipleCSV_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://learningstorageacco.dfs.core.windows.net/"
+		},
+		"AzureSqlDB_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "adfsqlserverind.database.windows.net"
+		},
+		"AzureSqlDB_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "azureDB"
+		},
+		"AzureSqlDB_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "rajatmaurya"
+		},
+		"AzureSqlDatabase_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "adfsqlserverind.database.windows.net"
+		},
+		"AzureSqlDatabase_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "azureDB"
+		},
+		"AzureSqlDatabase_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "rajatmaurya"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
@@ -31,13 +83,25 @@
 			"type": "string",
 			"defaultValue": "rajatmaurya"
 		},
-		"AzureDataLakeStoragePrivateEndPoints_properties_privateLinkResourceId": {
+		"LS_ADLS_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "/subscriptions/8bae69d8-798b-48b3-8b21-97f5ff5d7d9e/resourceGroups/LearningResourceGroup/providers/Microsoft.Storage/storageAccounts/learningstorageacco"
+			"defaultValue": "https://learningstorageacco.dfs.core.windows.net/"
 		},
-		"AzureDataLakeStoragePrivateEndPoints_properties_groupId": {
+		"LS_Email_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "dfs"
+			"defaultValue": "https://learningstorageacco.dfs.core.windows.net/"
+		},
+		"SqlServerOnPrem_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-ANBK365"
+		},
+		"SqlServerOnPrem_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "TestDB"
+		},
+		"SqlServerOnPrem_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sa"
 		},
 		"containerUri": {
 			"type": "string",
@@ -72,6 +136,24 @@
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
 					},
+					"SqlServerOnPrem_password": {
+						"value": "[parameters('SqlServerOnPrem_password')]"
+					},
+					"AzureDataLakeStorageForMultipleCSV_accountKey": {
+						"value": "[parameters('AzureDataLakeStorageForMultipleCSV_accountKey')]"
+					},
+					"AzureSqlDB_password": {
+						"value": "[parameters('AzureSqlDB_password')]"
+					},
+					"AzureSqlDatabase_password": {
+						"value": "[parameters('AzureSqlDatabase_password')]"
+					},
+					"LS_ADLS_accountKey": {
+						"value": "[parameters('LS_ADLS_accountKey')]"
+					},
+					"LS_Email_accountKey": {
+						"value": "[parameters('LS_Email_accountKey')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
@@ -84,15 +166,65 @@
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
 					},
-					"AzureDataLakeStoragePrivateEndPoints_properties_privateLinkResourceId": {
-						"value": "[parameters('AzureDataLakeStoragePrivateEndPoints_properties_privateLinkResourceId')]"
+					"SqlServerOnPrem_properties_typeProperties_server": {
+						"value": "[parameters('SqlServerOnPrem_properties_typeProperties_server')]"
 					},
-					"AzureDataLakeStoragePrivateEndPoints_properties_groupId": {
-						"value": "[parameters('AzureDataLakeStoragePrivateEndPoints_properties_groupId')]"
+					"SqlServerOnPrem_properties_typeProperties_database": {
+						"value": "[parameters('SqlServerOnPrem_properties_typeProperties_database')]"
+					},
+					"SqlServerOnPrem_properties_typeProperties_userName": {
+						"value": "[parameters('SqlServerOnPrem_properties_typeProperties_userName')]"
+					},
+					"AzureDataLakeStorageForMultipleCSV_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorageForMultipleCSV_properties_typeProperties_url')]"
+					},
+					"AzureSqlDB_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDB_properties_typeProperties_server')]"
+					},
+					"AzureSqlDB_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDB_properties_typeProperties_database')]"
+					},
+					"AzureSqlDB_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDB_properties_typeProperties_userName')]"
+					},
+					"AzureSqlDatabase_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase_properties_typeProperties_userName')]"
+					},
+					"LS_ADLS_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_properties_typeProperties_url')]"
+					},
+					"LS_Email_properties_typeProperties_url": {
+						"value": "[parameters('LS_Email_properties_typeProperties_url')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "azure-data-factory11_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'azure-data-factory11_ArmTemplate_0')]"
+			]
 		}
 	]
 }
